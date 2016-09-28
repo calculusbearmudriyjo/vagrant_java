@@ -14,7 +14,7 @@ echo "intsall java 8"
     sudo rm -rf jdk-8u45-linux-x64.tar.gz
 
 echo "java enviroment"
-	export JAVA_HOME=/opt/jdk1.8.0_45/
+	export JAVA_HOME=/opt/jdk1.8.0_45/bin
 	export JDK_HOME=/opt/jdk1.8.0_45/
 	export JRE_HOME=/opt/jdk1.8.0_45/jre
 
@@ -34,7 +34,7 @@ echo "intsall postgres"
 	apt-get -y install postgresql postgresql-contrib
 
 echo "install gradle"
-	sudo wget https://services.gradle.org/distributions/gradle-2.14-bin.zip
+	sudo wget --no-check-certificate https://services.gradle.org/distributions/gradle-2.14-bin.zip
     sudo unzip gradle-2.14-bin.zip -d /opt/
     sudo rm -rf gradle-2.14-bin.zip 
 
